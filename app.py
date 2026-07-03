@@ -99,7 +99,7 @@ def format_notification(status: str, extra: str = "", error: str = "", expiry_da
         "🇫🇮 Bot-hosting 续期通知",
         "",
         f"{status}",
-        f"👤 登录账户: {EMAIL}",
+        f"👤 登录账户: {masked_email}",
     ]
     if expiry_date:
         lines.append(f"📅 到期时间: {expiry_date}")
